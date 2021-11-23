@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:twmf="http://schemas.android.com/apk/res-auto" >
+
+    <group>
+	    
+	    <item
+	        android:id="@+id/menu_event_filter_day"
+	        android:orderInCategory="100"
+	        android:title="今天"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/menu_event_filter_week"
+	        android:orderInCategory="101"
+	        android:title="本週"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/menu_event_filter_month"
+	        android:orderInCategory="102"
+	        android:title="本月"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/menu_event_filter_all"
+	        android:orderInCategory="103"
+	        android:title="所有時間"
+	        android:showAsAction="always"/>
+    </group>
+</menu>

@@ -1,0 +1,269 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/twmf_white"
+    android:clickable="true" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/twmf_white"
+        android:paddingBottom="16dp"
+        android:orientation="vertical" >
+        <!-- 個人資料 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:background="@drawable/ic_user_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/user_profile_iv_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_user_icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/user_profile_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/twmf_white"
+                    android:text="姓名" />
+                <TextView
+                    android:id="@+id/user_profile_tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/twmf_white"
+                    android:text="Email" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" >
+                <ImageView
+                    android:id="@+id/user_profile_iv_badge"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true" />
+                <Button
+                    android:id="@+id/user_profile_btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_user_profile_edit_btn"
+                    android:textColor="@color/twmf_white"
+                    android:textSize="18sp"
+                    android:text="編輯" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- info area -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/twmf_orange" />
+        <LinearLayout
+            android:id="@+id/search_hours_btn_set_start_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/menu_font_size"
+                android:textColor="@color/twmf_orange"
+                android:text="開始時間" />
+            <TextView
+                android:id="@+id/start_year"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textSize="@dimen/menu_font_size"
+                android:textColor="@color/twmf_orange"
+                android:text="2015" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/twmf_orange" />
+        <LinearLayout
+            android:id="@+id/search_hours_btn_set_end_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:textColor="@color/twmf_orange"
+                android:text="結束時間" />
+            <TextView
+                android:id="@+id/end_year"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textSize="@dimen/menu_font_size"
+                android:textColor="@color/twmf_orange"
+                android:text="2015" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/twmf_orange" />
+        <LinearLayout
+            android:id="@+id/search_hours_btn_start_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_orange"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:textColor="@color/twmf_white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="確定" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/twmf_orange" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/answer_view"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:textColor="@color/twmf_orange"
+                    android:text="一般志工時數" />
+                <TextView
+                    android:id="@+id/general_volunteer_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/twmf_orange"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/twmf_orange" />
+            <LinearLayout
+                android:id="@+id/user_profile_btn_donated_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/menu_font_size"
+                    android:textColor="@color/twmf_orange"
+                    android:text="企業志工時數" />
+                <TextView
+                    android:id="@+id/enterprise_volunteer_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/twmf_orange"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/twmf_orange" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:textColor="@color/twmf_orange"
+                    android:text="累計志工時數" />
+                <TextView
+                    android:id="@+id/volunteer_hours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/twmf_orange"
+                    android:text="0.0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/twmf_orange" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

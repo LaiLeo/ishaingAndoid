@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+//    compileSdkVersion Integer.parseInt(project.COMPILE_SDK_VERSION)
+//    buildToolsVersion project.BUILD_TOOLS_VERSION
+    compileSdkVersion 30
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 30
+        
+//        versionName project.VERSION_NAME
+//        versionCode Integer.parseInt(project.VERSION_CODE)
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

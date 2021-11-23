@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/reply_list_item_spacing"
+    android:orientation="horizontal"
+    android:background="@color/twmf_white" >
+    
+    <ImageView
+		android:id="@+id/listview_reply_list_iv_usericon"
+		android:layout_width="@dimen/reply_list_portrait_size"
+		android:layout_height="@dimen/reply_list_portrait_size"
+		android:scaleType="centerCrop" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/reply_list_item_spacing"
+        android:orientation="vertical" >
+
+	    <!-- username-->
+	    <TextView
+	        android:id="@+id/listview_reply_list_tv_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxWidth="300dp"
+	        android:ellipsize="end"
+		    android:singleLine="true"
+	        android:textColor="@color/twmf_black"
+	        android:textStyle="bold"
+	        android:textSize="14sp" />
+            
+	    <!-- reply content -->
+	    <TextView
+		     android:id="@+id/listview_reply_list_tv_content"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_marginTop="@dimen/reply_list_item_content_spacing"
+		     android:textColor="@color/twmf_black"
+		     android:textSize="18sp" />
+	    <!-- reply image -->
+	    <ImageView
+		     android:id="@+id/listview_reply_list_iv_image"
+		     android:layout_width="@dimen/reply_list_image_size"
+		     android:layout_height="@dimen/reply_list_image_size"
+		     android:layout_marginTop="@dimen/reply_list_item_content_spacing"
+		     android:scaleType="centerCrop"
+		     android:visibility="gone" />
+ 	</LinearLayout>
+</LinearLayout>

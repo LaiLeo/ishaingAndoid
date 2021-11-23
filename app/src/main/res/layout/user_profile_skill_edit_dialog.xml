@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FEFEFE"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/user_profile_skill_lv"
+        android:layout_width="wrap_content"
+    	android:layout_height="300dp" />
+    
+    <View
+        android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#FF8C37" />
+		
+	<Button
+		android:id="@+id/user_profile_skill_btn_ok"
+       	android:layout_marginTop="8dp"
+       	android:layout_gravity="center"
+		style="@style/OrangeButton"
+       	android:text="確 定" />
+
+</LinearLayout>

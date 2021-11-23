@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/reply_list_item_spacing"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/twmf_white" >
+    
+    <ImageView
+		android:id="@+id/listview_donation_npo_list_iv"
+		android:layout_width="@dimen/listview_donation_npo_image_size"
+		android:layout_height="@dimen/listview_donation_npo_image_size" />
+
+    <TextView
+        android:id="@+id/listview_donation_npo_list_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:textColor="@color/twmf_v1_black"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+</LinearLayout>

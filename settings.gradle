@@ -1,0 +1,2 @@
+include ':app'
+// apply plugin: 'com.android.application' ':library', ':sample',,':library-circular'

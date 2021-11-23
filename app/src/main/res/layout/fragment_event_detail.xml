@@ -1,0 +1,565 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="#FFFFFF" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#FEFEFE"
+	    android:orientation="vertical" >
+	    
+	    <RelativeLayout
+	        android:id="@+id/fragment_event_detail_rl_rating"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:visibility="gone" >
+	        <TextView
+	            android:id="@+id/fragment_event_detail_tv_2"
+	            android:layout_width="80dp"
+	        	android:layout_height="fill_parent"
+	        	android:layout_alignParentLeft="true"
+	        	android:padding="6dp"
+	        	android:gravity="center_vertical"
+	        	android:background="@drawable/ic_rating_left"
+	        	android:textColor="#FEFEFE"
+	        	android:textSize="16sp"
+	        	android:text="目前分數" />
+	        <RatingBar
+	            android:id="@+id/fragment_event_detail_rb_rating"
+	            style="@style/TwmfRatingBarMedium"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:numStars="5" />
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="10dp" >
+	            
+	            <TextView
+		            android:id="@+id/fragment_event_detail_tv_1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="#1F2020"
+		            android:textSize="14sp"
+		            android:text="共" />
+		        <TextView
+		            android:id="@+id/fragment_event_detail_tv_rating_num"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="#FF8C37"
+		            android:text="100" />
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="#1F2020"
+		            android:textSize="14sp"
+		            android:text="人給予評分" />
+	            
+	        </LinearLayout>
+	        
+	        <TextView
+	            android:id="@+id/fragment_event_detail_tv_rating_score"
+	            android:layout_width="80dp"
+	        	android:layout_height="fill_parent"
+	        	android:gravity="center"
+	        	android:layout_alignParentRight="true"
+	        	android:padding="6dp"
+	        	android:background="@drawable/ic_rating_right"
+	        	android:textColor="#FEFEFE"
+	        	android:textSize="16sp"
+	        	android:text="分" />
+	    </RelativeLayout>
+	    <View
+	        android:id="@+id/fragment_event_detail_view_line"
+            android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#FF8C37"
+			android:visibility="gone" />
+	    
+	    <!-- event image view -->
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"
+	        android:gravity="center"
+		    android:background="#FFFFFF"  >	    
+		    <ImageView
+		        android:id="@+id/fragment_event_detail_iv_image"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:scaleType="centerCrop" />
+		    <Button
+		        android:id="@+id/fragment_event_detail_iv_switch"
+			    android:layout_width="80dp"
+			    android:layout_height="28dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginBottom="10dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentBottom="true"
+				android:visibility="gone"
+				android:text="活動討論"
+				android:textColor="@color/twmf_white"
+				android:background="@drawable/bg_button_orange_small" />
+		</RelativeLayout>
+	    
+	    <!-- subject area -->
+		<TextView
+			android:id="@+id/fragment_event_detail_tv_subject"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="40dp"
+			android:background="@android:color/transparent"
+			android:layout_margin="16dp"
+			android:textColor="@color/twmf_v1_title"
+			android:textSize="27sp" />
+
+
+	    <!-- information area -->
+	    <RelativeLayout
+			android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="16dp"
+			android:background="@drawable/bg_user_profile"
+	        android:paddingBottom="8dp"
+			android:layout_marginBottom="24dp">
+	    
+	        <LinearLayout
+	            android:id="@+id/fragment_event_detail_ll_information"
+	            android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentTop="true"
+	        	android:layout_alignParentLeft="true"
+	        	android:paddingTop="8dp"
+	        	android:paddingStart="16dp"
+	        	android:paddingEnd="16dp"
+	        	android:orientation="vertical" >
+
+				<TextView
+					android:textColor="@color/twmf_orange"
+					android:layout_marginTop="8dp"
+					android:text="活動資訊"
+					android:textStyle="bold"
+					android:textSize="22sp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				</TextView>
+
+				<View
+					android:background="@color/twmf_orange"
+					android:layout_width="match_parent"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="8dp"
+					android:layout_height="1dp">
+				</View>
+	        	
+
+	    		
+	    		<!-- event_register_deadline_time area -->
+	    		<LinearLayout
+	    		    android:id="@+id/fragment_event_detail_ll_register_end_time"
+	    		    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+		        	android:orientation="horizontal" >
+		        	
+	    		    <ImageView
+				        android:layout_width="20dp"
+				        android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+				        android:src="@drawable/ic_clock2" />
+	    		    
+	    		    <TextView
+	    		        android:id="@+id/fragment_event_detail_tv_register_end_hint"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879"
+				        android:text="報名截止時間 " />
+				
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_time_register"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879" />
+				    
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_time_countdown_register"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="16dp"
+				        android:textColor="#FF0000" />
+	    		    
+	    		</LinearLayout>	
+	    		
+	    		<!-- event_time area -->
+	    		<LinearLayout
+	    		    android:id="@+id/fragment_event_detail_ll_happen_time"
+	    		    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+		        	android:orientation="horizontal" >
+		        	
+	    		    <ImageView
+				        android:layout_width="20dp"
+				        android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+				        android:src="@drawable/ic_clock" />
+	    		    
+	    		    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879"
+				        android:text="活動開始時間 " />
+				
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_time"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879" />
+				    
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_time_countdown"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="16dp"
+				        android:textColor="#FF0000" />
+	    		    
+	    		</LinearLayout>	
+	    		
+	    		<!-- address area -->
+	    		<LinearLayout
+	    		    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+		        	android:orientation="horizontal" >
+		        	
+	    		    <ImageView
+				        android:layout_width="20dp"
+				        android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+				        android:src="@drawable/card_place" />
+				
+	    		    <TextView
+				        android:id="@+id/fragment_event_detail_tv_address_city"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#2523D7" />
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_address"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:ellipsize="end"
+				        android:singleLine="false"
+				        android:textColor="#2523D7" />
+	    		    
+	    		</LinearLayout>	
+	    		
+	    		<!-- volunteer_number area -->
+	    		<LinearLayout
+	    		    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+		        	android:orientation="horizontal" >
+		        	
+	    		    <ImageView
+				        android:layout_width="20dp"
+				        android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+				        android:src="@drawable/card_people" />
+				
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_volunteer_number"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879" />
+			   
+	    		</LinearLayout>	
+	    		
+	    		<!-- event_hour area -->
+	    		<LinearLayout
+	    		    android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+		        	android:orientation="horizontal" >
+		        	
+	    		    <ImageView
+	    		        android:id="@+id/fragment_event_detail_iv_event_hour"
+				        android:layout_width="20dp"
+				        android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+				        android:src="@drawable/card_people_time" />
+				
+				    <TextView
+				        android:id="@+id/fragment_event_detail_tv_event_hour"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="#787879" />
+	    		    
+	    		</LinearLayout>
+
+				<!-- npo_name area -->
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal" >
+
+					<ImageView
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+						android:src="@drawable/card_host" />
+
+					<TextView
+						android:id="@+id/fragment_event_detail_tv_npo_name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:maxWidth="250dp"
+						android:ellipsize="end"
+						android:singleLine="true"
+						android:textSize="14sp"
+						android:paddingLeft="3dp"
+						android:textColor="#787879" />
+
+				</LinearLayout>
+
+
+				<!-- cooperation npo area -->
+				<LinearLayout
+                    android:id="@+id/cooperation_npo_block"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal" >
+
+					<ImageView
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_marginEnd="6dp"
+						android:visibility="gone"
+						android:src="@drawable/card_host" />
+
+					<TextView
+						android:id="@+id/fragment_event_detail_tv_cooperation_npo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:maxWidth="250dp"
+						android:ellipsize="end"
+						android:textSize="14sp"
+						android:paddingLeft="3dp"
+						android:textColor="#787879" />
+
+				</LinearLayout>
+
+	        </LinearLayout>
+
+	        <!-- ensurance image area -->
+	        <ImageView
+				android:id="@+id/fragment_event_detail_iv_isneedensurance"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/ic_ensurance"
+				android:visibility="gone" />
+	        
+	    </RelativeLayout>
+	    
+	    <View
+            android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:visibility="gone"
+			android:background="#FF8C37" />
+	        
+        <!-- event description area -->
+        <TextView
+            android:id="@+id/fragment_event_detail_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="16dp"
+            android:autoLink="all"
+			android:visibility="gone"
+			android:linksClickable="true"
+            android:textColor="#787879" />
+        
+        <View
+            android:id="@+id/fragment_event_detail_view_separation_line_3"
+            android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#FF8C37"
+			android:visibility="gone" />
+
+	    <!-- skill area -->
+	    <RelativeLayout
+	        android:id="@+id/fragment_event_detail_rl_skill"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp" >
+	
+	        <TextView
+	            android:id="@+id/fragment_event_detail_tv_tags_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentLeft="true"
+	            android:textSize="16sp"
+	            android:textColor="#787879" />
+	        <LinearLayout
+			    android:id="@+id/fragment_event_detail_ll_skill"
+		        android:layout_width="match_parent"
+ 		        android:layout_height="wrap_content"
+		        android:paddingBottom="16dp"
+		        android:layout_below="@id/fragment_event_detail_tv_tags_label"
+		        android:orientation="vertical" />
+	        <!--Spinner
+		        android:id="@+id/fragment_event_detail_sp_skill"  
+			    android:layout_width="150dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/fragment_event_detail_tv_tags_label"
+			    style="@android:style/Widget.Holo.Light.Spinner"
+			    android:gravity="center_horizontal"
+			    android:entries="@array/skill_choice" />
+			<Spinner
+		        android:id="@+id/fragment_event_detail_sp_interesting"  
+			    android:layout_width="150dp" 
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/fragment_event_detail_sp_skill"
+			    style="@android:style/Widget.Holo.Light.Spinner"
+			    android:entries="@array/interesting_choice" /-->
+	        <!-- user training image area -->
+	        <Button
+				android:id="@+id/fragment_event_detail_btn_isneedtraining"
+				android:layout_height="28dp"
+				android:layout_width="80dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginStart="32dp"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:textColor="@color/twmf_white"
+				android:background="@drawable/bg_button_orange_small"
+				android:textSize="14dp"
+				android:text="志工須知" />
+	    </RelativeLayout>
+    
+        <!-- draw a separation line between infomation area and event description area -->
+        <View
+            android:id="@+id/fragment_event_detail_view_separation_line_2"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:visibility="gone"
+			android:background="#FF8C37" />
+	        
+        <!-- interaction buttons area -->
+        <LinearLayout
+            android:id="@+id/fragment_event_detail_ll_button_group"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="8dp"
+        	android:gravity="center_vertical"
+        	android:orientation="horizontal" >
+            
+            <Button
+	            android:id="@+id/fragment_event_detail_bt_focus"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:src="@drawable/ic_nonsubscribed" />
+	
+	        <ImageView
+	            android:id="@+id/fragment_event_detail_ib_share"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:src="@drawable/ic_share" />
+
+			<!--Button
+	            android:id="@+id/fragment_event_detail_btn_join"
+	            android:layout_width="wrap_content"
+	            android:layout_height="36dp"
+	            android:layout_marginLeft="8dp"
+	            android:drawableLeft="@drawable/ic_event_join"
+	            android:textSize="14sp"
+	            android:textColor="#FEFEFE"
+	            android:background="#FF8C37"
+	            android:text="我要報到"
+	            android:visibility="gone" /-->
+			<Button
+				android:id="@+id/fragment_event_detail_btn_action"
+				style="@style/OrangeButton"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="12dp"
+				android:layout_weight="1"
+				android:background="@drawable/bg_button_orange_large"
+				android:text="報名" />
+
+			<LinearLayout
+	            android:id="@+id/fragment_event_detail_btn_join"
+	            android:layout_width="wrap_content"
+	            android:layout_height="36dp"
+	            android:layout_marginLeft="3dp"
+	            android:background="#FF8C37"
+	            android:clickable="true"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	    		<ImageView
+	    		    android:id="@+id/fragment_event_detail_iv_join"
+	    		    android:layout_width="36dp"
+	            	android:layout_height="36dp"
+	            	android:padding="1dp"
+	            	android:src="@drawable/ic_event_join" />
+	           <TextView
+	                android:id="@+id/fragment_event_detail_tv_join"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="36dp"
+	            	android:textColor="#FEFEFE"
+	            	android:gravity="center"
+	            	android:textSize="18sp"
+		            android:text="我要報到 " />
+	        </LinearLayout>
+	        
+	        <!-- Button
+	            android:id="@+id/fragment_event_detail_bt_cancel_register"
+	            android:layout_width="wrap_content"
+	            android:layout_height="36dp"
+	            android:layout_marginLeft="3dp"
+	            android:drawableLeft="@drawable/ic_cancel"
+	            android:drawablePadding="4dp"
+	            android:textSize="14sp"
+	            android:textColor="#FF8C37"
+	            android:background="@drawable/bg_btn_nonfit"
+	            android:text="我不能去了"
+	            android:visibility="gone"/-->
+	        <LinearLayout
+	            android:id="@+id/fragment_event_detail_btn_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="36dp"
+	            android:layout_marginLeft="8dp"
+	            android:background="@drawable/bg_btn_nonfit"
+	            android:clickable="true"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	    		<ImageView
+	    		    android:id="@+id/fragment_event_detail_iv_cancel"
+	    		    android:layout_width="30dp"
+	            	android:layout_height="36dp"
+	            	android:padding="1dp"
+	            	android:src="@drawable/ic_cancel" />
+	           <TextView
+	                android:id="@+id/fragment_event_detail_tv_cancel"
+	                android:layout_width="wrap_content"
+	            	android:layout_height="36dp"
+	            	android:textColor="#FF8C37"
+	            	android:gravity="center"
+	            	android:textSize="18sp"
+		            android:text="我不能去了 " />
+	        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

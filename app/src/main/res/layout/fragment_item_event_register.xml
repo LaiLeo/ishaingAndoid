@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/twmf_white">
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:gravity="center_horizontal"
+		android:orientation="vertical" >
+		
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="22sp"
+	        android:textColor="@color/twmf_orange"
+	        android:text="認捐報名" />
+	        
+    	<EditText
+	        android:id="@+id/fragment_item_event_register_et_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:textSize="20sp"
+			android:textColor="@color/twmf_black"
+			android:inputType="textPersonName"
+			android:hint="姓名(請填真實姓名)" >
+			<requestFocus />
+		</EditText>
+    	
+    	<EditText
+	        android:id="@+id/fragment_item_event_register_et_phone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:textSize="20sp"
+			android:textColor="@color/twmf_black"
+			android:inputType="phone"
+			android:hint="手機/電話號碼(請填真實聯絡方式)" />
+    	
+    	<EditText
+	        android:id="@+id/fragment_item_event_register_et_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:textSize="20sp"
+			android:textColor="@color/twmf_black"
+			android:inputType="textEmailAddress"
+			android:hint="電子信箱" />
+    </LinearLayout>
+    <LinearLayout
+		android:id="@+id/fragment_item_event_register_skill_group"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+	</LinearLayout>
+    <EditText
+	    android:id="@+id/fragment_item_event_register_et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        android:gravity="start"
+        android:textSize="18sp"
+        android:textColor="@color/twmf_gray"
+        android:background="@drawable/bg_btn_nonfit"
+        android:hint="請輸入給活動主辦單位的附註..." />
+    
+    <TextView
+        android:id="@+id/fragment_item_event_register_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+		android:textColor="@color/twmf_orange"
+		android:text="@string/fragment_event_register_privacy_tip"
+		android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal" >
+    	
+        <CheckBox
+	        android:id="@+id/fragment_item_event_register_cb_policy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    	<TextView
+	        android:id="@+id/fragment_item_event_register_tv_policy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+			android:textColor="@color/twmf_orange"
+			android:clickable="true"
+			android:text="@string/fragment_event_register_tv_policy" />
+    </LinearLayout>
+    
+    <Button
+		android:id="@+id/fragment_item_event_register_btn_submit"
+       	android:layout_marginTop="8dp"
+       	android:gravity="center"
+		style="@style/OrangeButton"
+       	android:text="送出" />
+    
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

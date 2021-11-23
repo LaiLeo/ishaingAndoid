@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/twmf_white">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/twmf_white"
+		android:clickable="true"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="認捐報名"
+				android:textColor="@color/twmf_orange"
+				android:textSize="22sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="姓名(請填真實姓名)"
+					android:inputType="textPersonName"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp">
+
+					<requestFocus />
+				</EditText>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="手機/電話號碼(請填真實聯絡方式)"
+					android:inputType="phone"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="電子信箱"
+					android:inputType="textEmailAddress"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					android:text="出生日期"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/fragment_event_register_btn_birth"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginTop="10dp"
+				android:background="@drawable/bg_btn_nonfit"
+				android:text="出生日期"
+				android:textColor="@color/twmf_black"
+				android:textSize="20sp" />
+
+			<LinearLayout
+				android:id="@+id/fragment_event_register_et_uid_parent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="gone">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_uid"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:textSize="20sp"
+					android:textColor="@color/twmf_black"
+					android:inputType="textEmailAddress"
+					android:hint="身分證字號" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/fragment_event_register_ll_contact"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp"
+			android:visibility="gone">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_contact_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="監護人姓名"
+					android:inputType="textPersonName"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_contact_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="監護人電話"
+					android:inputType="phone"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/fragment_event_register_ll_enterprise"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp"
+			android:visibility="gone">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_enterprise_serial_number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="企業代碼"
+					android:inputType="textPersonName"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/twmf_orange"
+					android:text="*"/>
+				<EditText
+					android:id="@+id/fragment_event_register_et_employee_serial_number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="員工編號"
+					android:inputType="phone"
+					android:textColor="@color/twmf_black"
+					android:textSize="20sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/fragment_event_register_ll_service_area_and_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp">
+
+			<EditText
+				android:id="@+id/fragment_event_register_et_service_area"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="可服務區域"
+				android:inputType="textPersonName"
+				android:textColor="@color/twmf_black"
+				android:focusable="false"
+				android:textSize="20sp" />
+
+			<EditText
+				android:id="@+id/fragment_event_register_et_service_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="可服務項目"
+				android:inputType="phone"
+				android:textColor="@color/twmf_black"
+				android:focusable="false"
+				android:textSize="20sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/fragment_item_event_register_skill_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		</LinearLayout>
+
+		<EditText
+			android:id="@+id/fragment_item_event_register_et_note"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:lines="3"
+			android:layout_marginLeft="32dp"
+			android:layout_marginRight="32dp"
+			android:layout_marginBottom="16dp"
+			android:padding="4dp"
+			android:gravity="start"
+			android:textSize="18sp"
+			android:textColor="@color/twmf_gray"
+			android:background="@drawable/bg_btn_nonfit"
+			android:hint="請輸入給活動主辦單位的附註..." />
+
+		<TextView
+			android:id="@+id/fragment_event_register_tv_tip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:text="@string/fragment_event_register_privacy_tip"
+			android:textColor="@color/twmf_orange"
+			android:textSize="14sp"
+			android:visibility="gone" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal">
+
+			<CheckBox
+				android:id="@+id/fragment_event_register_cb_policy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/fragment_event_register_tv_policy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				android:text="@string/fragment_event_register_tv_policy"
+				android:textColor="@color/twmf_orange"
+				android:textSize="14sp" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/fragment_event_register_btn_submit"
+			android:layout_marginTop="8dp"
+			style="@style/OrangeButton"
+			android:gravity="center"
+			android:text="送出"/>
+
+	</LinearLayout>
+</ScrollView>

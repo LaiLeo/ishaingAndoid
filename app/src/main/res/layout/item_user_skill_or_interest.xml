@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_user_skill_or_interest_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   	android:padding="8dp"
+    android:background="@drawable/bg_user_skill_or_interest_item"
+    android:textColor="@color/twmf_white"
+    android:singleLine="true"
+    android:textSize="22sp" />

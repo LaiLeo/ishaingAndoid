@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/twmf_white">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/twmf_white"
+		android:clickable="true"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+
+			<Button
+				android:layout_marginTop="12dp"
+				android:id="@+id/fragment_login_btn_twm"
+				style="@style/GrayOutlineButton"
+				android:drawableStart="@drawable/taiwanmobile_logo_login_small"
+				android:text="@string/btn_login_twm"
+				android:layout_width="wrap_content"
+				android:background="@null"
+				android:textSize="28sp"/>
+
+
+			<EditText
+				android:id="@+id/et_serial_name"
+				android:layout_marginTop="48dp"
+				android:hint="真實姓名，中文或英文"
+				android:inputType="text"
+				style="@style/EditText">
+			</EditText>
+
+			<EditText
+				android:id="@+id/et_serial_email"
+				android:layout_marginTop="24dp"
+				android:hint="電子信箱"
+				android:inputType="textEmailAddress"
+				style="@style/EditText">
+			</EditText>
+
+
+			<EditText
+				android:id="@+id/et_serial_number"
+				android:layout_marginTop="24dp"
+				android:hint="員工編號"
+				android:inputType="text|number"
+				style="@style/EditText">
+			</EditText>
+
+
+			<EditText
+				android:id="@+id/et_serial_id"
+				android:layout_marginTop="24dp"
+				android:hint="身份證字號"
+				android:inputType="text"
+				style="@style/EditText">
+			</EditText>
+
+
+			<EditText
+				android:id="@+id/et_serial_phone"
+				android:layout_marginTop="24dp"
+				android:hint="電話"
+				android:inputType="text|phone"
+				style="@style/EditText">
+			</EditText>
+
+			<EditText
+				android:id="@+id/et_serial_department"
+				android:layout_marginTop="24dp"
+				android:hint="部門"
+				android:inputType="text"
+				style="@style/EditText">
+			</EditText>
+
+			<EditText
+				android:id="@+id/et_serial_type"
+				android:layout_marginTop="24dp"
+				android:hint="公司別"
+				android:inputType="text"
+				style="@style/EditText">
+			</EditText>
+
+			<EditText
+				android:id="@+id/et_serial_group"
+				android:layout_marginTop="24dp"
+				android:hint="企業職工分組"
+				android:inputType="text"
+				style="@style/EditText">
+			</EditText>
+
+
+
+			<Button
+				android:id="@+id/btn_bind"
+				android:layout_marginTop="36dp"
+				style="@style/OrangeButton"
+				android:text="@string/btn_confirm" />
+			<Button
+				android:id="@+id/btn_cancel"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="24dp"
+				style="@style/OrangeButton"
+				android:text="@string/btn_back" />
+
+
+
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

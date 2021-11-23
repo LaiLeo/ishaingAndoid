@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified$Generated" generated="true"><source path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library-circular/unspecified/res"/></dataSet><dataSet config="unspecified$Generated" generated="true"><source path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="/Users/pichu/WilloApp/sample/src/main/res"/><source path="/Users/pichu/WilloApp/sample/build/generated/res/rs/debug"/><source path="/Users/pichu/WilloApp/sample/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/Users/pichu/WilloApp/sample/src/debug/res"/></dataSet><dataSet config="unspecified" from-dependency="true" generated-set="unspecified$Generated"><source path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library-circular/unspecified/res"><file path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library-circular/unspecified/res/values/values.xml" qualifiers=""><color name="cpb_default_color">#33b5e5</color><item format="float" name="cpb_default_sweep_speed" type="string">1</item><style name="Theme.SmoothProgressBarDefaults" parent="android:Theme.Holo">
+        <item name="cpbStyle">@style/CircularProgressBar</item>
+    </style><declare-styleable name="CircularProgressBar"><attr format="reference" name="cpbStyle"/><attr format="color" name="cpb_color"/><attr format="reference" name="cpb_colors"/><attr format="dimension" name="cpb_stroke_width"/><attr format="integer" name="cpb_min_sweep_angle"/><attr format="integer" name="cpb_max_sweep_angle"/><attr format="float" name="cpb_sweep_speed"/><attr format="float" name="cpb_rotation_speed"/></declare-styleable><integer name="cpb_default_min_sweep_angle">20</integer><style name="CircularProgressBar" parent="CPB">
+        <item name="cpb_color">@color/cpb_default_color</item>
+        <item name="cpb_stroke_width">@dimen/cpb_default_stroke_width</item>
+        <item name="cpb_min_sweep_angle">@integer/cpb_default_min_sweep_angle</item>
+        <item name="cpb_max_sweep_angle">@integer/cpb_default_max_sweep_angle</item>
+        <item name="cpb_sweep_speed">@string/cpb_default_sweep_speed</item>
+        <item name="cpb_rotation_speed">@string/cpb_default_rotation_speed</item>
+    </style><integer name="cpb_default_max_sweep_angle">300</integer><item format="float" name="cpb_default_rotation_speed" type="string">1</item><dimen name="cpb_default_stroke_width">4dp</dimen><style name="CPB" parent="android:Widget.Holo.ProgressBar">
+    </style></file><file path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library-circular/unspecified/res/values-v21/values-v21.xml" qualifiers="v21"><style name="CPB" parent="android:Widget.Material.ProgressBar">
+    </style></file></source></dataSet><dataSet config="unspecified" from-dependency="true" generated-set="unspecified$Generated"><source path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res"><file path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res/values/values.xml" qualifiers=""><integer name="spb_default_sections_count">4</integer><dimen name="spb_default_stroke_width">4dp</dimen><style name="Theme.SmoothProgressBarDefaults" parent="android:Theme">
+        <item name="spbStyle">@style/SmoothProgressBar</item>
+    </style><item format="float" name="spb_default_speed" type="string">1</item><string name="library_smoothprogressbar_author">Antoine Merle</string><style name="SmoothProgressBar" parent="SPB">
+        <item name="spb_color">@color/spb_default_color</item>
+        <item name="spb_sections_count">@integer/spb_default_sections_count</item>
+        <item name="spb_speed">@string/spb_default_speed</item>
+        <item name="spb_stroke_width">@dimen/spb_default_stroke_width</item>
+        <item name="spb_stroke_separator_length">@dimen/spb_default_stroke_separator_length</item>
+        <item name="spb_reversed">@bool/spb_default_reversed</item>
+        <item name="spb_mirror_mode">@bool/spb_default_mirror_mode</item>
+        <item name="spb_interpolator">@integer/spb_default_interpolator</item>
+    </style><bool name="spb_default_mirror_mode">false</bool><string name="library_smoothprogressbar_libraryName">SmoothProgressBar</string><color name="spb_default_color">#33b5e5</color><string name="library_smoothprogressbar_authorWebsite">https://github.com/castorflex</string><string name="library_smoothprogressbar_libraryVersion">1.0.0</string><string name="define_smoothprogressbar"/><dimen name="spb_default_stroke_separator_length">4dp</dimen><string name="library_smoothprogressbar_libraryWebsite">https://github.com/castorflex/SmoothProgressBar</string><string name="library_smoothprogressbar_repositoryLink">https://github.com/castorflex/SmoothProgressBar.git</string><style name="SPB" parent="android:Widget.ProgressBar.Horizontal">
+    </style><string name="library_smoothprogressbar_libraryDescription">Small library allowing you to make a smooth indeterminate progress bar. You can either user your progress bars and set this drawable or use directly the SmoothProgressBarView.</string><bool name="spb_default_reversed">false</bool><integer name="spb_default_interpolator">0</integer><string name="library_smoothprogressbar_isOpenSource">true</string><string name="library_smoothprogressbar_licenseId">apache_2_0</string><declare-styleable name="SmoothProgressBar"><attr format="reference" name="spbStyle"/><attr format="color" name="spb_color"/><attr format="dimension" name="spb_stroke_width"/><attr format="dimension" name="spb_stroke_separator_length"/><attr format="integer" name="spb_sections_count"/><attr format="float" name="spb_speed"/><attr format="float" name="spb_progressiveStart_speed"/><attr format="float" name="spb_progressiveStop_speed"/><attr format="enum" name="spb_interpolator"><enum name="spb_interpolator_accelerate" value="0"/><enum name="spb_interpolator_linear" value="1"/><enum name="spb_interpolator_acceleratedecelerate" value="2"/><enum name="spb_interpolator_decelerate" value="3"/></attr><attr format="boolean" name="spb_reversed"/><attr format="boolean" name="spb_mirror_mode"/><attr format="reference" name="spb_colors"/><attr format="boolean" name="spb_progressiveStart_activated"/><attr format="reference" name="spb_background"/><attr format="boolean" name="spb_generate_background_with_colors"/><attr format="boolean" name="spb_gradients"/></declare-styleable><bool name="spb_default_progressiveStart_activated">false</bool></file><file path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res/values-v11/values-v11.xml" qualifiers="v11"><style name="SPB" parent="android:Widget.Holo.ProgressBar.Horizontal">
+    </style></file><file path="/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res/values-v21/values-v21.xml" qualifiers="v21"><style name="SPB" parent="android:Widget.Material.ProgressBar.Horizontal">
+    </style></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/Users/pichu/WilloApp/sample/src/main/res"><file name="pocket_interpolator" path="/Users/pichu/WilloApp/sample/src/main/res/anim/pocket_interpolator.xml" qualifiers="" type="anim"/><file name="ic_launcher" path="/Users/pichu/WilloApp/sample/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/pichu/WilloApp/sample/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/pichu/WilloApp/sample/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/pichu/WilloApp/sample/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_custom" path="/Users/pichu/WilloApp/sample/src/main/res/layout/activity_custom.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/pichu/WilloApp/sample/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file path="/Users/pichu/WilloApp/sample/src/main/res/values/colors.xml" qualifiers=""><integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array><integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array><color name="holo_blue_dark">#0099cc</color><color name="gplus_color_3">#427fed</color><color name="holo_green_dark">#669900</color><color name="gplus_color_2">#f4b400</color><integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array><color name="gplus_color_4">#b23424</color><color name="holo_red_dark">#cc0000</color><color name="pocket_color_1">#85edb9</color><color name="pocket_color_2">#34bdb7</color><color name="pocket_color_3">#ee4458</color><color name="gplus_color_1">#3e802f</color><color name="pocket_color_4">#fcb74d</color><color name="holo_purple_dark">#9933cc</color><integer-array name="colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </integer-array><color name="holo_yellow_dark">#ff8800</color></file><file path="/Users/pichu/WilloApp/sample/src/main/res/values/strings.xml" qualifiers=""><string-array name="interpolators">
+        <item>Accelerate</item>
+        <item>Linear</item>
+        <item>AccelerateDecelerate</item>
+        <item>Decelerate</item>
+        <item>FastOutSlowIn</item>
+    </string-array><string name="app_name">SmoothProgressBar</string></file><file path="/Users/pichu/WilloApp/sample/src/main/res/values/styles.xml" qualifiers=""><style name="GradientProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">0dp</item>
+        <item name="spb_sections_count">3</item>
+        <item name="spb_speed">1.7</item>
+        <item name="android:interpolator">@android:anim/decelerate_interpolator</item>
+        <item name="spb_colors">@array/gplus_colors</item>
+        <item name="spb_gradients">true</item>
+    </style><style name="GNowProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">8dp</item>
+        <item name="spb_sections_count">2</item>
+        <item name="spb_speed">1.7</item>
+        <item name="spb_progressiveStart_speed">2</item>
+        <item name="spb_progressiveStop_speed">3.4</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">true</item>
+        <item name="spb_reversed">true</item>
+        <item name="spb_colors">@array/gplus_colors</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style><style name="GPlusProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">12dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">0.7</item>
+        <item name="spb_interpolator">spb_interpolator_linear</item>
+        <item name="spb_colors">@array/gplus_colors</item>
+    </style><style name="PocketProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">4dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">1</item>
+        <item name="android:interpolator">@anim/pocket_interpolator</item>
+        <item name="spb_colors">@array/pocket_bar_colors</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style><style name="AppTheme" parent="BaseTheme">
+        <item name="spbStyle">@style/SmoothProgressBar</item>
+        <item name="cpbStyle">@style/CircularProgressBar</item>
+    </style><style name="BaseTheme" parent="android:Theme.Holo">
+    </style><style name="ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+    </style></file><file path="/Users/pichu/WilloApp/sample/src/main/res/values-v21/styles.xml" qualifiers="v21"><style name="BaseTheme" parent="android:Theme.Material">
+    </style></file></source><source path="/Users/pichu/WilloApp/sample/build/generated/res/rs/debug"/><source path="/Users/pichu/WilloApp/sample/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Users/pichu/WilloApp/sample/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CircularProgressBar"><attr format="reference" name="cpbStyle"/><attr format="color" name="cpb_color"/><attr format="reference" name="cpb_colors"/><attr format="dimension" name="cpb_stroke_width"/><attr format="integer" name="cpb_min_sweep_angle"/><attr format="integer" name="cpb_max_sweep_angle"/><attr format="float" name="cpb_sweep_speed"/><attr format="float" name="cpb_rotation_speed"/></declare-styleable><declare-styleable name="SmoothProgressBar"><attr format="reference" name="spbStyle"/><attr format="color" name="spb_color"/><attr format="dimension" name="spb_stroke_width"/><attr format="dimension" name="spb_stroke_separator_length"/><attr format="integer" name="spb_sections_count"/><attr format="float" name="spb_speed"/><attr format="float" name="spb_progressiveStart_speed"/><attr format="float" name="spb_progressiveStop_speed"/><attr format="enum" name="spb_interpolator"><enum name="spb_interpolator_accelerate" value="0"/><enum name="spb_interpolator_linear" value="1"/><enum name="spb_interpolator_acceleratedecelerate" value="2"/><enum name="spb_interpolator_decelerate" value="3"/></attr><attr format="boolean" name="spb_reversed"/><attr format="boolean" name="spb_mirror_mode"/><attr format="reference" name="spb_colors"/><attr format="boolean" name="spb_progressiveStart_activated"/><attr format="reference" name="spb_background"/><attr format="boolean" name="spb_generate_background_with_colors"/><attr format="boolean" name="spb_gradients"/></declare-styleable></configuration></mergedItems></merger>

@@ -1,0 +1,70 @@
+[
+    {
+        "outputFile": "/Users/pichu/WilloApp/sample/build/intermediates/res/merged/debug/values-v21/values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 3,
+                    "endColumn": 12,
+                    "endOffset": 124
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/sample/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 3,
+                        "endColumn": 12,
+                        "endOffset": 124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 129,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 205
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library-circular/unspecified/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 3,
+                        "endColumn": 12,
+                        "endOffset": 131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 210,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 297
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/sample/build/intermediates/exploded-aar/WilloApp/library/unspecified/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 3,
+                        "endColumn": 12,
+                        "endOffset": 142
+                    }
+                }
+            }
+        ]
+    }
+]

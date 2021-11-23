@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/twmf_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true" >
+    
+    <View
+        android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/twmf_orange" />
+    
+    <ListView
+	    android:id="@+id/fragment_donation_lv"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:divider="@color/gray_line"
+		android:dividerHeight="1dp" />
+
+</LinearLayout>

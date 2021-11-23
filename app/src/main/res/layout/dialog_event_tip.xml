@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FF8C37">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+        <ImageView
+	        android:layout_width="150dp"
+	        android:layout_height="150dp"
+	        android:src="@drawable/ic_info2" />
+    </LinearLayout>
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="活動提醒設定"
+            android:textSize="20sp"
+            android:textColor="#FEFEFE" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:orientation="vertical" >
+        <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <TextView
+	            android:id="@+id/event_tip_dialog_tv"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="50dp"
+	        	android:textColor="#FEFEFE"
+	        	android:textSize="16sp"
+	        	android:gravity="center_vertical"
+	        	android:layout_alignParentLeft="true"
+	        	android:text="提醒時間" />
+	        <Switch
+	            android:id="@+id/event_tip_dialog_switch_tip"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="50dp"
+	        	android:layout_alignParentRight="true"
+	        	android:gravity="center_vertical"
+	        	android:checked="true" />
+
+        </RelativeLayout>
+        <Spinner
+	        android:id="@+id/event_tip_dialog_sp_time"  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/event_tip_dialog_tv"
+		    style="@android:style/Widget.Holo.Spinner"
+		    android:entries="@array/tip_choice" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/event_tip_dialog_btn"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FEFEFE"
+        android:textSize="30sp"
+        android:textColor="#FF8C37"
+        android:text="確認" />
+</LinearLayout>

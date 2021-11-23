@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:twmf="http://schemas.android.com/apk/res-auto" >
+
+    <group>
+	    
+	    <item
+	        android:id="@+id/settings_menu_tutorial"
+	        android:orderInCategory="100"
+	        android:title="使用說明"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_about"
+	        android:orderInCategory="101"
+	        android:title="關於我們"
+	        android:showAsAction="always"/>
+		<item
+			android:id="@+id/settings_menu_partner"
+			android:orderInCategory="101"
+			android:title="成為夥伴"
+			android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_policy"
+	        android:orderInCategory="102"
+	        android:title="服務條款"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_faq"
+	        android:orderInCategory="103"
+	        android:title="常見問題"
+	        android:showAsAction="always"/>
+<!--	    <item-->
+<!--	        android:id="@+id/settings_menu_rate"-->
+<!--	        android:orderInCategory="104"-->
+<!--	        android:title="給予微樂志工好評"-->
+<!--	        android:showAsAction="always"/>-->
+		<item
+			android:id="@+id/settings_menu_facebook"
+			android:orderInCategory="104"
+			android:title="微樂志工粉絲專頁"
+			android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_add_npo"
+	        android:orderInCategory="105"
+	        android:title="前往加入夥伴"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_setting"
+	        android:orderInCategory="106"
+	        android:title="設定"
+	        android:showAsAction="always"/>
+	    <item
+	        android:id="@+id/settings_menu_logout"
+	        android:orderInCategory="107"
+	        android:title="登出"
+	        android:showAsAction="always"/>
+    </group>
+</menu>

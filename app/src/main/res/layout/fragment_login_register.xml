@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/twmf_white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >    
+        
+        <ImageView
+            android:layout_width="150dp"
+        	android:layout_height="150dp"
+        	android:layout_marginTop="10dp"
+        	android:src="@drawable/ic_willo" />
+		
+        <EditText
+			android:id="@+id/fragment_login_register_et_username"
+			style="@style/EditText"
+			android:layout_marginTop="24dp"
+			android:hint="電子信箱"
+			android:inputType="textEmailAddress" >
+		    <requestFocus />
+		</EditText>
+		
+       <EditText
+			android:id="@+id/fragment_login_register_et_password"
+		    android:layout_marginTop="24dp"
+		    style="@style/EditText"
+			android:hint="密碼"
+			android:inputType="textPassword" >
+		</EditText>
+		
+       <EditText
+			android:id="@+id/fragment_login_register_et_password_confirm"
+		    android:layout_marginTop="24dp"
+		    style="@style/EditText"
+			android:hint="確認密碼"
+			android:inputType="textPassword" >
+		</EditText>
+		
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:layout_marginTop="24dp"
+		    android:layout_marginStart="@dimen/main_margin"
+		    android:layout_marginEnd="@dimen/main_margin"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical" >
+    	
+	        <CheckBox
+		        android:id="@+id/fragment_login_register_cb_policy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	    	<TextView
+		        android:id="@+id/fragment_login_register_tv_policy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+				android:textColor="@color/twmf_black"
+				android:clickable="true"
+				android:text="@string/fragment_login_register_tv_policy" />
+    	</LinearLayout>
+
+		<Button
+			android:id="@+id/fragment_login_register_btn_ok"
+			style="@style/OrangeButton"
+			android:layout_marginTop="10dp"
+			android:text="註冊"/>
+
+		<TextView
+		    android:id="@+id/fragment_login_register_tv_nonchecked"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+			android:layout_marginBottom="24dp"
+		    android:textColor="@color/twmf_orange"
+		    android:textSize="16sp"
+		    android:text="請詳閱會員條款並勾選"
+		    android:visibility="invisible" />            
+	</LinearLayout>
+</LinearLayout>

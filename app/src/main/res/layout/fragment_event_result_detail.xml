@@ -1,0 +1,152 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#FEFEFE"
+    android:orientation="vertical" >
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="#FFFFFF" >
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+		    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="4dp"
+			    android:layout_marginBottom="4dp"
+			    android:layout_gravity="center_vertical"
+			    android:orientation="horizontal" >
+			    <TextView
+			        android:id="@+id/fragment_event_result_tv_subject"
+			        android:layout_width="0dp"
+			    	android:layout_height="match_parent"
+			    	android:layout_weight="1"
+			    	android:singleLine="true"
+			    	android:ellipsize="end"
+			    	android:gravity="center_vertical"
+			    	android:textColor="#787879"
+				    android:textSize="28sp" />    
+				<ImageView
+			        android:id="@+id/fragment_event_result_iv_switch"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+					android:src="@drawable/ic_event_result" />
+		    </LinearLayout>
+
+		    <TextView
+		        android:id="@+id/fragment_event_result_tv_description"
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:autoLink="all"
+				android:linksClickable="true"
+			    android:padding="8dp" />
+		    
+		    <!-- 活動成果圖片 -->
+		    <HorizontalScrollView
+		        android:id="@+id/fragment_event_result_hsv_images"
+		        android:layout_width="fill_parent"
+		        android:layout_height="100dp"
+		        android:layout_marginTop="8dp"
+		        android:layout_marginBottom="8dp"
+		        android:orientation="horizontal"
+		        android:scrollbars="none"
+		        android:fadingEdgeLength="0dp" >
+				<LinearLayout
+				    android:id="@+id/fragment_event_result_ll_images"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal" />
+			</HorizontalScrollView>
+		    
+		    <View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FF8C37" />
+		    
+		    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="8dp"
+			    android:layout_gravity="center_vertical"
+			    android:orientation="horizontal" >
+			    <TextView
+			        android:id="@+id/fragment_event_result_tv_reply_num"
+			        android:layout_width="0dp"
+			    	android:layout_height="match_parent"
+			    	android:layout_weight="1"
+			    	android:gravity="center_vertical"
+			    	android:textColor="#787879"
+				    android:textSize="22sp" />
+				<Button
+			        android:id="@+id/fragment_event_result_btn_focus"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:src="@drawable/ic_nonsubscribed" />
+				<ImageView
+			        android:id="@+id/fragment_event_result_iv_share"
+			        android:layout_width="40dp"
+			        android:layout_height="40dp"
+			        android:src="@drawable/ic_share" />
+		    </LinearLayout>
+		    
+		    <View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FF8C37" />
+		    
+		    <!-- reply view -->
+			<LinearLayout
+				android:id="@+id/fragment_event_result_ll_replylist"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+			   <ListView
+			       android:id="@+id/fragment_event_result_lv_reply"
+			       android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:divider="@color/twmf_orange"
+			       android:dividerHeight="1dp" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#FF8C37" />
+	<LinearLayout
+        android:id="@+id/fragment_event_result_ll"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:orientation="horizontal" >
+		<ImageView
+	        android:id="@+id/fragment_event_result_iv_reply_commit_image"
+	        android:layout_width="48dp"
+	        android:layout_height="48dp"
+	        android:src="@drawable/ic_photo" />
+		<EditText
+            android:id="@+id/fragment_event_result_et_reply_comment"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:hint="輸入回覆..." />
+	    <Button
+        	android:id="@+id/fragment_event_result_btn_reply_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_btn_orange"
+            android:layout_margin="6dp"
+            android:textSize="20sp"
+            android:textColor="@color/twmf_white"
+            android:text="留言" />
+	</LinearLayout>
+</LinearLayout>

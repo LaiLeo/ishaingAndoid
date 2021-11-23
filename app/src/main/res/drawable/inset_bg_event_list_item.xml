@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/bg_event_list_item"
+    android:insetTop="2dp"
+    android:insetRight="5dp"
+    android:insetBottom="2dp"
+    android:insetLeft="5dp"/>

@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:clickable="true"
+	android:background="#FFFFFF">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    
+	    <!-- npo icon and npo name area -->
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingStart="14dp"
+	        android:paddingEnd="14dp"
+	        android:paddingTop="15dp"
+	        android:paddingBottom="15dp"
+			android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	        
+	        <ImageView
+	            android:id="@+id/fragment_donation_npo_detail_iv_icon"
+	            android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:layout_marginLeft="16dp" />
+	        <TextView
+		        android:id="@+id/fragment_donation_npo_detail_tv_subject"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:textColor="@color/twmf_v1_black"
+		        android:textSize="26sp"
+		        android:textStyle="bold" />
+		</LinearLayout>
+	    
+	    <View
+	        android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/twmf_v1_divider" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:layout_marginStart="25dp"
+			android:layout_marginEnd="25dp"
+			android:textSize="18sp"
+			android:textColor="@color/twmf_v1_black"
+			android:text="@string/donation_tip" />
+
+
+		<!-- npo descpription area -->
+	    <TextView
+	        android:id="@+id/fragment_donation_npo_detail_tv_description"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/twmf_white"
+	        android:paddingTop="8dp"
+	        android:paddingLeft="16dp"
+	        android:paddingBottom="8dp"
+	        android:paddingRight="16dp"
+	        android:textColor="@color/twmf_black"
+		    android:autoLink="all"
+			android:linksClickable="true"
+	        android:textSize="16sp" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/twmf_v1_divider" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/btn_donation_phone"
+				style="@style/OrangeButton"
+				android:background="@drawable/bg_button_orange_large"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="語音捐款" />
+
+			<Button
+				android:id="@+id/btn_donation_creditcard"
+				style="@style/OrangeButton"
+				android:background="@drawable/bg_button_orange_large"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="數位捐款" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btn_donation_period"
+			android:layout_marginTop="20dp"
+			style="@style/OrangeButton"
+			android:background="@drawable/bg_button_orange_large"
+			android:text="定期定額捐款" />
+
+		<RadioGroup
+			android:id="@+id/selection_group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:layout_marginTop="32dp"
+			android:layout_gravity="center_horizontal"
+			>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/twmf_black"
+				android:textSize="20sp"
+				android:text="選擇付款方式："
+				/>
+			<RadioButton
+				android:id="@+id/selection_group_creditcard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/twmf_black"
+				android:text="數位捐款"
+				android:buttonTint="@color/twmf_orange"
+				tools:checked="true"/>
+			<RadioButton
+				android:id="@+id/selection_group_phone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/twmf_black"
+				android:text="語音捐款(併入台灣大哥大電信帳單)"
+				android:buttonTint="@color/twmf_orange" />
+		</RadioGroup>
+	    <LinearLayout
+			android:id="@+id/donate_by_phone_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32dp"
+			android:layout_marginBottom="32dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:orientation="vertical"
+			android:visibility="gone">
+			<Spinner
+				android:id="@+id/fragment_item_search_sp_donation"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@android:style/Widget.Holo.Light.Spinner"
+				android:entries="@array/donation_choice" />
+			<Button
+				android:id="@+id/fragment_donation_npo_detail_btn_donation"
+				android:layout_marginTop="24dp"
+				style="@style/OrangeButton"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:paddingBottom="8dp"
+				android:text="我要捐款" />
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+</ScrollView>

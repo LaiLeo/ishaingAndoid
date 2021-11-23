@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:background="@color/twmf_orange" >
+
+    <TextView
+        android:id="@+id/title_button_dialog_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="28sp"
+		android:textColor="#FEFEFE" />
+    <!--View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#FEFEFE" /-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="8dp" >
+	    <TextView
+	        android:id="@+id/title_button_dialog_tv_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingLeft="16dp"
+        	android:paddingRight="16dp"
+	        android:textSize="18sp"
+			android:textColor="#FEFEFE"
+			android:autoLink="all"
+			android:linksClickable="true" />
+    </ScrollView>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FEFEFE" />
+    <Button
+        android:id="@+id/title_button_dialog_btn_ok"
+        android:layout_width="150dp"
+       	android:layout_height="wrap_content"
+       	android:layout_margin="8dp"
+       	android:gravity="center"
+       	android:layout_gravity="center"
+       	android:background="@drawable/bg_btn_nonfit"
+       	android:textColor="@color/twmf_orange"
+       	android:textSize="24sp"
+       	android:text="關閉" />
+      
+</LinearLayout>

@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/twmf_white" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/twmf_black"
+        android:textSize="22sp"
+        android:text="手機定位功能未開啟，請開啟" />
+    
+    <Button
+        android:id="@+id/fragment_location_service_is_disabled_view_btn"
+        style="@style/OrangeButton"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="開啟手機定位功能" />
+    
+</LinearLayout>

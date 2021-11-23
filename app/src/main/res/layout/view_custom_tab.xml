@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="#00000000" ><!--tea-test modify org: @drawable/bg_tab; tab highlight not full filled-->
+
+    <!--ImageView
+        android:id="@+id/custom_tab_icon"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/custom_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_tab_icon"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="15sp" /-->
+
+    <TextView
+        android:id="@+id/custom_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center"
+        android:textColor="@color/tab_unselected"
+        android:textSize="@dimen/tab_top_text_size"
+        android:maxLines="1"/>
+
+</RelativeLayout>

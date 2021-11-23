@@ -1,0 +1,124 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--<item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+        <!--<item name="actionBarWidgetTheme">@null</item>-->
+        <!--<item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>-->
+
+        <!-- Panel attributes -->
+        <!--<item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>-->
+
+        <!--<item name="colorPrimaryDark">@color/primary_dark_material_dark</item>-->
+        <item name="colorPrimary">@color/twmf_orange</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarSize">60dp</item>
+        <item name="android:actionBarTabStyle">@style/MyTabStyle</item>
+        <item name="actionBarTabStyle">@style/MyTabStyle</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- ActionBar tabs styles -->
+    <style name="MyTabStyle" parent="android:Widget.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <!--        <item name="background">@drawable/ic_dialer</item>-->
+    </style>
+    
+    <style name="TwmfRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/rating_bar_drawable</item>
+	</style>
+	<style name="TwmfRatingBarMedium" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/rating_bar_drawable_medium</item>
+	</style>
+	<style name="TwmfRatingBarSmall" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/rating_bar_drawable_small</item>
+	</style>
+	
+	<style name="DatePickerDialog_big_font">
+		<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+	
+	<style name="DialogFactory_big_font">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    
+	<style name="message_dialog" parent="@android:Theme.Dialog">
+   	    <item name="android:windowFrame">@null</item>
+   	    <item name="android:windowNoTitle">true</item>
+   	    <item name="android:windowIsFloating">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+    <style name="dialog_theme" parent="android:Theme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+
+        <item name="android:layout_marginStart">@dimen/main_margin</item>
+        <item name="android:layout_marginEnd">@dimen/main_margin</item>
+
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+
+        <item name="android:background">@drawable/btn_gray_outline</item>
+        <item name="android:ems">15</item>
+        <item name="android:textColor">#9B9B9B</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EditTextLine" parent="Widget.AppCompat.EditText" >
+        <item name="android:colorControlNormal">@color/twmf_edit_text_bg</item>
+        <item name="android:colorControlActivated">@color/twmf_edit_text_bg</item>
+        <item name="android:colorControlHighlight">@color/twmf_edit_text_bg</item>
+    </style>
+
+
+    <style name="OrangeButton" parent="Widget.AppCompat.Button" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_text_height</item>
+
+        <item name="android:layout_marginStart">@dimen/main_margin</item>
+        <item name="android:layout_marginEnd">@dimen/main_margin</item>
+
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+
+        <item name="android:background">@drawable/bg_btn_orange</item>
+        <item name="android:textColor">@color/twmf_white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BlueButton" parent="OrangeButton" >
+        <item name="android:background">@drawable/btn_blue</item>
+    </style>
+
+    <style name="BlueOutlineButton" parent="OrangeButton" >
+        <item name="android:background">@drawable/btn_blue_outline</item>
+        <item name="android:textColor">@color/twmf_v1_blue</item>
+    </style>
+
+    <style name="GrayOutlineButton" parent="OrangeButton" >
+        <item name="android:background">@drawable/btn_gray_outline</item>
+        <item name="android:textColor">@color/twmf_v1_gray</item>
+    </style>
+</resources>

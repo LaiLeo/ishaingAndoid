@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FEFEFE">
+
+    <RatingBar
+        android:id="@+id/ratingbar_dialog_rb"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        style="@style/TwmfRatingBar"
+	    android:numStars="5" />
+
+    <Button
+        android:id="@+id/ratingbar_dialog_btn"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn_nonfit"
+        android:textSize="30sp"
+        android:textColor="#FF8C37"
+        android:text="確定" />
+</LinearLayout>

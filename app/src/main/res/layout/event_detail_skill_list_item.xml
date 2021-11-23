@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/twmf_white"
+    android:padding="6dp"
+    android:orientation="horizontal" >
+    
+    <CheckBox
+        android:id="@+id/event_detail_skill_list_item_cb"
+        android:layout_width="30dp"
+		android:layout_height="30dp" />
+	<TextView
+	    android:id="@+id/event_detail_skill_list_item_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:textSize="22sp"
+		android:textColor="#000000"
+		android:text="技能組" />
+	<ImageView
+		android:id="@+id/event_detail_skill_list_item_iv"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_gravity="center_vertical"
+		android:src="@drawable/ic_skillgroup"
+		android:clickable="true" />
+	<TextView
+	    android:id="@+id/event_detail_skill_list_item_tv_number"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:textSize="18sp"
+		android:textColor="@color/twmf_black"
+		android:text="剩餘" />
+</LinearLayout>

@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/listitem_background" >
+    
+    <ImageView
+        android:id="@+id/listview_event_list_iv_image"
+        android:layout_width="@dimen/listview_image_size"
+        android:layout_height="@dimen/listview_image_size"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/listview_event_list_iv_image"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical" >
+        
+        <TextView
+	        android:id="@+id/listview_event_list_tv_subject"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ellipsize="end"
+		    android:singleLine="true"
+	        android:textColor="#1F2020"
+	        android:textSize="20sp" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	        
+            <!--time label-->
+		    <ImageView
+		        android:id="@+id/listview_event_list_iv_clock_icon"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:src="@drawable/ic_clock" />
+		
+		    <TextView
+		        android:id="@+id/listview_event_list_tv_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#787879" />
+		    
+		    <TextView
+		        android:id="@+id/listview_event_list_tv_time_countdown"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:textColor="#FF0000" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+		    
+            <!--address label-->
+		    <ImageView
+		        android:id="@+id/listview_event_list_iv_address_icon"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:src="@drawable/ic_address" />
+		
+		    <TextView
+		        android:id="@+id/listview_event_list_tv_address_city"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#787879" />
+		    <TextView
+		        android:id="@+id/listview_event_list_tv_address"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ellipsize="end"
+		        android:singleLine="true"
+		        android:textColor="#787879" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+		    
+        <!--volunteer label-->
+	    <ImageView
+	        android:id="@+id/listview_event_list_iv_volunteer_icon"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/ic_man" />
+	
+	    <TextView
+	        android:id="@+id/listview_event_list_tv_volunteer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#787879" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+	<ImageView
+		android:id="@+id/listview_event_list_iv_isneedensurance"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/ic_urgent" />
+	
+	<!-- 定位資訊 -->
+	<TextView
+		android:id="@+id/listview_event_list_tv_distance"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:maxWidth="100dp"
+		android:text="定位中"
+		android:textColor="#FF0000" />
+
+    <!--
+setting focusable=false allows onItemClick of ListView and onClick of Button
+only works for Button but not ImageButton
+    -->
+
+    <Button
+        android:id="@+id/listview_event_list_btn_is_focused"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_nonsubscribed"
+        android:focusable="false" />
+
+    <!-- for npo detail view -->
+    <TextView
+        android:id="@+id/listview_event_list_tv_event_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- for subscribed_event_adapter filter expired events  -->
+    <TextView
+        android:id="@+id/listview_event_list_tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+ 
+</RelativeLayout>

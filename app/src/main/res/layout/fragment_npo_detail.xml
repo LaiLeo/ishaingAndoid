@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_npo_detail_ll_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8C37"
+    android:clickable="true"
+    android:orientation="vertical" >
+    
+    <!-- npo icon and npo name area -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:padding="10dp"
+        android:background="#FEFEFE" >
+        
+        <ImageView
+            android:id="@+id/fragment_npo_detail_iv_npo_icon"
+            android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true" />
+        <TextView
+	        android:id="@+id/fragment_npo_detail_tv_subject"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/fragment_npo_detail_iv_npo_icon"
+	        android:layout_alignParentTop="true"
+	        android:paddingLeft="15dp"
+	        android:lines="2"
+	        android:maxWidth="250dp"
+		    android:ellipsize="end"
+		    android:textColor="#000"
+	        android:textSize="22sp"
+	        android:textStyle="bold" />
+        <TextView
+	        android:id="@+id/fragment_npo_detail_tv_npo_website"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/fragment_npo_detail_iv_npo_icon"
+	        android:layout_alignParentBottom="true"
+	        android:paddingBottom="10dp"
+	        android:maxWidth="200dp"
+		    android:ellipsize="end"
+		    android:singleLine="true"
+	        android:paddingLeft="15dp"
+	        android:textColor="#FF8C37"
+	        android:textSize="16sp"
+			android:autoLink="all" />
+        <Button
+	        android:id="@+id/fragment_npo_detail_bt_subscribed"
+	        android:layout_width="45dp"
+        	android:layout_height="45dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/ic_subscribed"
+	        android:focusable="false" />
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#FF8C37" />
+    
+    <!-- npo descpription area -->
+    <TextView
+        android:id="@+id/fragment_npo_detail_tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/twmf_white"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:lines="4"
+        android:ellipsize="end"
+	    android:textColor="#787879"
+	    android:autoLink="all"
+		android:linksClickable="true"
+        android:textSize="16sp" />
+    <FrameLayout
+        android:id="@+id/fragment_npo_detail_fl_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/twmf_white"
+        android:padding="8dp" >
+	    <FrameLayout
+	        android:id="@+id/fragment_npo_detail_ytpv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true" />
+    </FrameLayout>
+    <!-- npo info area -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="3dp"
+        android:orientation="horizontal" >
+        <!-- rating bar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+        	android:layout_height="45dp"
+        	android:paddingRight="5dp"
+        	android:orientation="vertical" >
+            <RatingBar
+                android:id="@+id/fragment_npo_detail_rb_score"
+                style="@style/TwmfRatingBarSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="25dp"
+		        android:layout_alignParentTop="true"
+		        android:numStars="5" />
+            <TextView
+                android:id="@+id/fragment_npo_detail_tv_score"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="right"
+        		android:textSize="12sp"
+        		android:textColor="#FEFEFE" />
+        </LinearLayout>
+        
+        <View
+            android:id="@+id/fragment_npo_detail_view_separation_line_1"
+			android:layout_width="2dp"
+			android:layout_height="40dp"
+			android:background="#FEFEFE" />
+        
+        <!-- Events Number -->
+        <ImageView
+			android:id="@+id/fragment_npo_detail_iv_event_num_icon"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"
+			android:src="@drawable/ic_npo_detail_event_num" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingRight="2dp"
+        	android:orientation="vertical" >
+            <TextView
+                android:id="@+id/fragment_npo_detail_tv_event_num"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="20sp"
+        		android:text="15" />
+            <TextView
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="12sp"
+        		android:text="活動數" />
+        </LinearLayout>
+        
+        <View
+            android:id="@id/fragment_npo_detail_view_separation_line_1"
+			android:layout_width="2dp"
+			android:layout_height="40dp"
+			android:background="#FEFEFE" />
+        <!-- 參加人數 area -->
+        <ImageView
+				android:id="@+id/fragment_npo_detail_iv_event_joined_num"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:src="@drawable/ic_npo_detail_join_num" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingRight="3dp"
+        	android:orientation="vertical" >
+            <TextView
+                android:id="@+id/fragment_npo_detail_tv_event_joined_num"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="20sp"
+        		android:text="15" />
+            <TextView
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="12sp"
+        		android:text="參加人數" />
+        </LinearLayout>
+        
+        <View
+	            android:id="@id/fragment_npo_detail_view_separation_line_1"
+				android:layout_width="2dp"
+				android:layout_height="40dp"
+				android:background="#FEFEFE" />
+        <!-- 訂閱人數 area -->
+        <ImageView
+				android:id="@+id/fragment_npo_detail_iv_subscribed_num"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:src="@drawable/ic_subscribe_num" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+            <TextView
+                android:id="@+id/fragment_npo_detail_tv_subscribed_num"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="20sp"
+        		android:text="15" />
+            <TextView
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="#FEFEFE"
+        		android:textSize="12sp"
+        		android:text="訂閱人數" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_npo_detail_btn_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/twmf_white"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:textColor="@color/twmf_orange"
+            android:text="舉辦的活動" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_right" />
+    </LinearLayout>
+</LinearLayout>

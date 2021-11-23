@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="twmf_orange">#FFEC6C00</color>
+    <color name="twmf_orange_transparent">#FFFFE7CD</color>
+    <color name="tab_title_selected">#FFFF5555</color>
+    <color name="tab_title_unselected">#FFFFFFFF</color>
+    <color name="twmf_gray">#FF797979</color>
+    <color name="twmf_white">#FFFFFFFF</color>
+    <color name="twmf_yellow">#FFF1C40F</color>
+    <color name="twmf_black">#FF212121</color>
+    
+    <color name="fragment_background">#FFFFFFFF</color>
+    
+    <color name="tab_background_color">#FF212121</color>
+    <color name="tab_text_color">#FFFFFFFF</color>
+    <color name="inside_tab_background_color">@color/twmf_orange</color>
+    <color name="inside_tab_text_color">#FFFFFFFF</color>
+    
+    <color name="reply_preview_image_hint">#A0FFFFFF</color>
+    <color name="reply_box">#616164</color>
+    <color name="reply_button_unpressed">#FFFFFFFF</color>
+    <color name="reply_button_pressed">#616164</color>
+    <!--FIH-add start-->
+    <color name="tab_selected">#FFFFFF</color>
+    <color name="tab_unselected">#CFCFCFCF</color>
+    <color name="gray_line">#CFCFCFCF</color>
+    <!--FIH-add end-->
+
+    <color name="twmf_blue_link">#3697FF</color>
+    <color name="twmf_v1_gray">#646464</color>
+    <color name="twmf_v1_blue">#FF0099CC</color>
+    <color name="twmf_v1_green">#28C488</color>
+    <color name="twmf_v1_link">#3697FF</color>
+    <color name="twmf_v1_red">#FF6666</color>
+    <color name="twmf_v1_black">#000000</color>
+    <color name="twmf_v1_title">#7A7A7A</color>
+    <color name="twmf_v1_divider">#DCDCDC</color>
+    <color name="twmf_v1_orange">#EB6D01</color>
+    <color name="twmf_profile_gray">#7C7C7C</color>
+    <color name="twmf_profile_gray_w">#757575</color>
+    <color name="twmf_edit_text_bg">#979797</color>
+
+</resources>

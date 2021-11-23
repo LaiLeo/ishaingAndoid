@@ -1,0 +1,184 @@
+[
+    {
+        "outputFile": "/Users/pichu/WilloApp/library-circular/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endColumn": 54,
+                    "endOffset": 598
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 54,
+                        "endOffset": 598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 603,
+                    "endColumn": 61,
+                    "endOffset": 660
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 603,
+                        "endColumn": 61,
+                        "endOffset": 660
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 665,
+                    "endColumn": 60,
+                    "endOffset": 721
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 665,
+                        "endColumn": 60,
+                        "endOffset": 721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 726,
+                    "endColumn": 81,
+                    "endOffset": 803
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 726,
+                        "endColumn": 81,
+                        "endOffset": 803
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 808,
+                    "endColumn": 78,
+                    "endOffset": 882
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 808,
+                        "endColumn": 78,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 887,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 959
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 887,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 959
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 964,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 1492
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 964,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1497,
+                    "endLine": 21,
+                    "endColumn": 12,
+                    "endOffset": 1648
+                },
+                "from": {
+                    "file": "/Users/pichu/WilloApp/library-circular/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1497,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 1648
+                    }
+                }
+            }
+        ]
+    }
+]

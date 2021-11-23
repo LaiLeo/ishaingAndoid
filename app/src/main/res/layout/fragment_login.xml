@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/twmf_white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/twmf_white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="102dp"
+        	android:layout_height="99dp"
+        	android:layout_marginTop="12dp"
+        	android:src="@drawable/ic_willo" />
+
+		<EditText
+			android:id="@+id/fragment_login_editText_username"
+			android:layout_marginTop="24dp"
+			android:hint="電子信箱"
+			android:inputType="textEmailAddress"
+			style="@style/EditText">
+		</EditText>
+
+       <EditText
+			android:id="@+id/fragment_login_editText_password"
+			android:layout_marginTop="24dp"
+			android:hint="密碼"
+			android:inputType="textPassword"
+		    style="@style/EditText">
+		</EditText>
+
+		<TextView
+			android:id="@+id/fragment_login_btn_forgetpassword"
+			android:layout_width="110dp"
+			android:layout_height="45dp"
+			android:layout_gravity="end"
+			android:gravity="end|center_vertical"
+			android:textColor="@color/twmf_blue_link"
+			android:textStyle=""
+			android:layout_marginEnd="@dimen/main_margin"
+			android:text="忘記密碼" />
+
+
+		<Button
+			android:id="@+id/fragment_login_btn_ok"
+			style="@style/OrangeButton"
+			android:text="登入" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:layout_alignParentLeft="true"
+				android:textColor="@color/twmf_black"
+				android:gravity="center"
+				android:text="沒有賬號嗎？" />
+			<TextView
+				android:id="@+id/fragment_login_btn_register"
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:layout_alignParentLeft="true"
+				android:textColor="@color/twmf_blue_link"
+				android:gravity="center"
+				android:layout_marginStart="8dp"
+				android:text="註冊會員" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/main_margin"
+			android:layout_marginEnd="@dimen/main_margin"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="1"
+				android:background="#FFD9D9D9">
+			</View>
+
+			<TextView
+				android:layout_marginStart="24dp"
+				android:layout_marginEnd="24dp"
+				android:text="@string/other_accounts_label"
+				android:gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="1"
+				android:background="#FFD9D9D9">
+			</View>
+
+		</LinearLayout>
+
+
+		<Button
+			android:layout_marginTop="8dp"
+			android:id="@+id/fragment_login_btn_fubon"
+			style="@style/GrayOutlineButton"
+			android:drawableStart="@drawable/fubon_logo_login_small"
+			android:text="@string/btn_login_fubon" />
+		<Button
+			android:layout_marginTop="12dp"
+			android:id="@+id/fragment_login_btn_twm"
+			style="@style/GrayOutlineButton"
+			android:drawableStart="@drawable/taiwanmobile_logo_login_small"
+			android:text="@string/btn_login_twm"
+			android:layout_marginBottom="24dp"/>
+
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

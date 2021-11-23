@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_gravity="top"
+		android:background="@color/twmf_orange" />
+	<com.taiwanmobile.volunteers.v2.utils.CustomViewPager
+		android:id="@+id/fragment_enterprise_volunteer_tab_main_pager"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="right" >
+
+		<androidx.viewpager.widget.PagerTabStrip
+			android:id="@+id/fragment_tab_enterprise_volunteer_main_pager_title_strip"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_gravity="bottom"
+			android:gravity="center"
+			android:background="@color/inside_tab_background_color"
+			android:textSize="@dimen/tab_bottom_text_size"
+			android:textColor="@color/inside_tab_text_color" />
+
+	</com.taiwanmobile.volunteers.v2.utils.CustomViewPager>
+</LinearLayout>

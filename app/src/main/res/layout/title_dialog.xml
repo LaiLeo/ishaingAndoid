@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FF8C37" >
+
+    <!-- 用於簡單提醒的視窗，文字數量必須為程式確定不會很多，以免視窗太長 -->
+    <TextView
+        android:id="@+id/title_dialog_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="28sp"
+		android:textColor="#FEFEFE" />
+    <TextView
+        android:id="@+id/title_dialog_tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+		android:textColor="#FEFEFE" />
+</LinearLayout>

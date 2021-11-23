@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/pichu/WilloApp/sample/build/intermediates/res/merged/debug/layout/activity_custom.xml",
+        "source": "/Users/pichu/WilloApp/sample/src/main/res/layout/activity_custom.xml"
+    },
+    {
+        "merged": "/Users/pichu/WilloApp/sample/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/pichu/WilloApp/sample/src/main/res/layout/activity_main.xml"
+    }
+]

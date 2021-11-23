@@ -1,0 +1,321 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="16dp"
+	android:background="@color/twmf_white"
+	android:clickable="true" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/twmf_white"
+	    android:orientation="vertical" >
+		<!-- 個人資料 -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="160dp"
+	        android:gravity="center"
+	        android:background="@drawable/bg_user_profile"
+	        android:layout_marginStart="16dp"
+	        android:layout_marginEnd="16dp"
+			android:layout_marginTop="16dp"
+        	android:orientation="horizontal" >
+			<ImageView
+            	android:id="@+id/fragment_user_profile_edit_iv_photo"
+            	android:layout_width="100dp"
+           		android:layout_height="100dp"
+				android:layout_marginStart="16dp"
+            	android:scaleType="centerCrop"
+            	android:src="@drawable/view_member_default" />
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="16dp"
+			    android:orientation="vertical"
+			    android:layout_gravity="center_vertical" >
+				<EditText
+			        android:id="@+id/fragment_user_profile_edit_et_name"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+					android:minHeight="40dp"
+			        android:maxLength="32"
+			        android:textSize="18sp"
+			        android:textColorHint="@color/twmf_black"
+			        android:textColor="@color/twmf_profile_gray"
+			        android:hint="請填寫真實姓名"
+					style="@style/EditTextLine"
+			        android:inputType="textPersonName" />
+			    <EditText
+			        android:id="@+id/fragment_user_profile_edit_et_phone"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+					android:minHeight="40dp"
+			        android:maxLength="32"
+			        android:textSize="18sp"
+			        android:textColorHint="@color/twmf_black"
+			        android:textColor="@color/twmf_profile_gray"
+			        android:hint="請填寫手機/電話"
+					style="@style/EditTextLine"
+			        android:inputType="phone" />
+			    <!-- is_public -->
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_alignParentRight="true"
+			        android:gravity="center"
+			        android:orientation="horizontal">
+			        <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textSize="16sp"
+				        android:textColor="@color/twmf_black"
+				        android:text="個人護照" />
+			        <Switch
+			            android:id="@+id/fragment_user_profile_edit_switch_public"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="16dp" />
+			    </LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<View
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:visibility="gone"
+			android:background="@color/twmf_orange" />
+		<!-- 密碼修改 -->
+		<TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="26dp"
+			android:layout_marginTop="10dp"
+			android:textSize="20sp"
+			android:textColor="@color/twmf_black"
+	        android:text="修改密碼" />
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="4dp"
+		    android:paddingBottom="4dp"
+		    android:paddingLeft="40dp"
+		    android:paddingRight="40dp"
+		    android:orientation="vertical" >
+		    <EditText
+		        android:id="@+id/fragment_user_profile_edit_et_old_password"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/twmf_gray"
+		        android:maxLength="32"
+		        android:textSize="18sp"
+		        android:textColorHint="@color/twmf_gray"
+		        android:hint="原密碼"
+		        android:inputType="textPassword" />
+		    <EditText
+		        android:id="@+id/fragment_user_profile_edit_et_password"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/twmf_gray"
+		        android:maxLength="32"
+		        android:textSize="18sp"
+		        android:textColorHint="@color/twmf_gray"
+		        android:hint="新密碼"
+		        android:inputType="textPassword" />
+		    <EditText
+		        android:id="@+id/fragment_user_profile_edit_et_password_confirm"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/twmf_gray"
+		        android:maxLength="32"
+		        android:textSize="18sp"
+		        android:textColorHint="@color/twmf_gray"
+		        android:hint="新密碼確認"
+		        android:inputType="textPassword" />
+		</LinearLayout>
+	    <View
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginTop="8dp"
+			android:visibility="gone"
+			android:background="@color/twmf_orange" />
+		<!-- about_me area -->
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginStart="26dp"
+	        android:textColor="@color/twmf_black"
+	        android:text="關於我..." />
+		<EditText
+		    android:id="@+id/fragment_user_profile_edit_et_about_me"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:lines="2"
+	        android:layout_marginLeft="26dp"
+	        android:layout_marginRight="26dp"
+	        android:layout_marginBottom="8dp"
+	        android:padding="4dp"
+	        android:gravity="start"
+	        android:textSize="16sp"
+	        android:textColor="@color/twmf_gray"
+	        android:background="@drawable/bg_user_profifle_input"
+	        android:hint="自我介紹" />
+		<!-- 可服務區域 -->
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+			android:layout_marginLeft="26dp"
+			android:layout_marginRight="26dp"
+	        android:textColor="@color/twmf_black"
+	        android:text="@string/service_area_title" />
+		<EditText
+		    android:id="@+id/fragment_user_profile_edit_et_service_area"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:lines="2"
+			android:layout_marginLeft="26dp"
+			android:layout_marginRight="26dp"
+	        android:layout_marginBottom="8dp"
+	        android:padding="4dp"
+	        android:gravity="start"
+	        android:textSize="16sp"
+	        android:textColor="@color/twmf_gray"
+	        android:background="@drawable/bg_user_profifle_input"
+			android:clickable="true"
+			android:focusable="false"
+	        android:hint="@string/service_area_title" />
+		<!-- 可服務項目 -->
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+			android:layout_marginLeft="26dp"
+			android:layout_marginRight="26dp"
+	        android:textColor="@color/twmf_black"
+	        android:text="@string/service_item_title" />
+		<EditText
+		    android:id="@+id/fragment_user_profile_edit_et_service_item"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:lines="2"
+			android:layout_marginLeft="26dp"
+			android:layout_marginRight="26dp"
+	        android:layout_marginBottom="16dp"
+	        android:padding="4dp"
+	        android:gravity="start"
+	        android:textSize="16sp"
+	        android:textColor="@color/twmf_gray"
+	        android:background="@drawable/bg_user_profifle_input"
+			android:clickable="true"
+			android:focusable="false"
+	        android:hint="@string/service_item_title" />
+
+		<!-- Button -->
+		<Button
+			android:id="@+id/fragment_user_profile_edit_btn_license"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginLeft="26dp"
+			android:layout_marginRight="26dp"
+			android:layout_marginBottom="12dp"
+			android:background="@drawable/btn_gray_outline"
+			android:text="專業證照"
+			android:textColor="@color/twmf_profile_gray_w"
+			android:textSize="20sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="26dp"
+			android:layout_marginTop="10dp"
+			android:textSize="20sp"
+			android:textColor="@color/twmf_black"
+			android:text="企業賬號綁定" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="40dp"
+			android:layout_marginEnd="40dp"
+			android:layout_marginTop="10dp"
+			android:textSize="18sp"
+			android:textColor="@color/twmf_v1_gray"
+			android:text="富邦集團員工" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="40dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/fubon_bind_state"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="@color/twmf_v1_green"
+				android:text="已綁定" />
+
+			<TextView
+				android:id="@+id/fubon_bind_link"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginEnd="40dp"
+				android:textSize="18sp"
+				android:textColor="@color/twmf_v1_link"
+				android:text="解除綁定" />
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="40dp"
+			android:layout_marginEnd="40dp"
+			android:layout_marginTop="10dp"
+			android:textSize="18sp"
+			android:textColor="@color/twmf_v1_gray"
+			android:text="台灣大哥大員工" />
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="40dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/twm_bind_state"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:textColor="@color/twmf_v1_red"
+				android:text="未綁定" />
+
+			<TextView
+				android:id="@+id/twm_bind_link"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginEnd="40dp"
+				android:textSize="18sp"
+				android:textColor="@color/twmf_v1_link"
+				android:text="前往綁定" />
+		</LinearLayout>
+
+		<Button
+		    android:id="@+id/fragment_user_profile_edit_btn_confirm"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+			android:layout_marginTop="32dp"
+		    android:layout_marginLeft="32dp"
+		    android:layout_marginRight="32dp"
+		    android:background="@drawable/bg_btn_orange"
+		    android:textSize="20sp"
+		    android:textColor="@color/twmf_white"
+		    android:text="確定修改" />
+	</LinearLayout>
+</ScrollView>
